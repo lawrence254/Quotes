@@ -2,7 +2,10 @@
 <hr>
 <div class="container">
   <div class="row" *ngFor="let saying of quotes;let i= index">
-      <div class="col-md-6">
+    <div class="col-md-4">
+      <app-quotes-form></app-quotes-form>
+    </div>
+      <div class="col-md-4">
    <h2>"{{saying.quote}}"</h2>
    <i>"{{saying.author}}"</i><br>
       <!-- Display more details about the quote by clicking the button below -->
@@ -10,7 +13,7 @@
    </div>
 
    <!-- Load details component -->
-   <div class="col-md-6" *ngIf="saying.showDetails"> 
+   <div class="col-md-4" *ngIf="saying.showDetails"> 
    <app-details [saying]='saying' (complete)='removeQuote($event,i)'></app-details>
    </div>
 </div>
