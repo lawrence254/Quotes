@@ -5,9 +5,6 @@
    <h2>"{{saying.quote}}"</h2>
    <i>"{{saying.author}}"</i>
    <!-- Move the below section to a new description component -->
-   <p>Uploaded By:{{saying.user}}</p>
-   <!-- This section should be in its own component too -->
-   <button name="up">I LIKE!</button>
-   <button name="down">Naah!</button>
+   <app-details [saying]='saying'></app-details>
   </li>
 </ul>
