@@ -6,10 +6,11 @@ import {Quote} from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes = [
-    new Quote('Carry out a random act of kindness, with no expectation of reward, safe in the knowledge that one day someone might do the same for you.','Princess Diana','BrainyQuotes.com',new Date(2018,1,12))
-  ]
 
+  quotes = [
+    new Quote('the same for you.','Princess Diana','BrainyQuotes.com',new Date(2018,1,12),0,0),
+    new Quote('the same for you.','Princess Diana','BrainyQuotes.com',new Date(2018,1,12),0,0)
+  ]
   removeQuote(complete,index){
     if(complete){
       this.quotes.splice(index,1);
