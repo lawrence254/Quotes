@@ -1,12 +1,16 @@
 <h1>Here are your Quotes</h1>
 <hr>
-<ul>
-  <li *ngFor="let saying of quotes;let i= index">
+<div class="container">
+  <div class="row" *ngFor="let saying of quotes;let i= index">
+      <div class="col-md-6">
    <h2>"{{saying.quote}}"</h2>
    <i>"{{saying.author}}"</i><br>
-   <!-- Display more details about the quote by clicking the button below -->
-   <button (click)='toggleDetails(i)'>Show Details</button>
+      <!-- Display more details about the quote by clicking the button below -->
+      <button class="btn btn-primary" (click)='toggleDetails(i)'>Show Details</button>
+   </div>
+
    <!-- Load details component -->
-   <app-details *ngIf="saying.showDetails" [saying]='saying' (complete)='removeQuote($event,i)'></app-details>
-  </li>
-</ul>
+   <div class="col-md-6" *ngIf="saying.showDetails"> 
+   <app-details [saying]='saying' (complete)='removeQuote($event,i)'></app-details>
+   </div>
+</div>
