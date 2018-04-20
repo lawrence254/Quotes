@@ -7,6 +7,6 @@
    <!-- Display more details about the quote by clicking the button below -->
    <button (click)='toggleDetails(i)'>Show Details</button>
    <!-- Load details component -->
-   <app-details *ngIf="saying.showDetails" [saying]='saying'></app-details>
+   <app-details *ngIf="saying.showDetails" [saying]='saying' (complete)='removeQuote($event,i)'></app-details>
   </li>
 </ul>

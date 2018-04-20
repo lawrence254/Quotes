@@ -1,4 +1,6 @@
 <p>Uploaded By:{{saying.user}}</p>
+<p>Created <i>{{saying.dateAdded|days}} days ago</i></p>
    <!-- This section should be in its own component too -->
    <button name="up">I LIKE!</button>
-   <button name="down">Naah!</button>
+   <button name="down">Naah!</button><br>
+   <button (click)='deleteQuote(true)'>Delete this Quote</button>

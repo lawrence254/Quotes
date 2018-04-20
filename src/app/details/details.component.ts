@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
 import {Quote} from '../quote'
 @Component({
   selector: 'app-details',
@@ -8,6 +8,11 @@ import {Quote} from '../quote'
 export class DetailsComponent implements OnInit {
 
   @Input() saying:Quote;
+  @Output() complete = new EventEmitter<boolean>();
+
+  deleteQuote(deleteQ:boolean){
+    this.complete.emit(deleteQ);
+  }
   constructor() { }
 
   ngOnInit() {

@@ -5,13 +5,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { DetailsComponent } from './details/details.component';
+import { DaysPipe } from './days.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    DetailsComponent
+    DetailsComponent,
+    DaysPipe
   ],
   imports: [
     BrowserModule
