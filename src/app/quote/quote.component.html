@@ -1,10 +1,12 @@
 <h1>Here are your Quotes</h1>
 <hr>
 <ul>
-  <li *ngFor="let saying of quotes">
+  <li *ngFor="let saying of quotes;let i= index">
    <h2>"{{saying.quote}}"</h2>
-   <i>"{{saying.author}}"</i>
-   <!-- Move the below section to a new description component -->
-   <app-details [saying]='saying'></app-details>
+   <i>"{{saying.author}}"</i><br>
+   <!-- Display more details about the quote by clicking the button below -->
+   <button (click)='toggleDetails(i)'>Show Details</button>
+   <!-- Load details component -->
+   <app-details *ngIf="saying.showDetails" [saying]='saying'></app-details>
   </li>
 </ul>
