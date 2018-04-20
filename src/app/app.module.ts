@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { DetailsComponent } from './details/details.component';
 import { DaysPipe } from './days.pipe';
+import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { DaysPipe } from './days.pipe';
     AppComponent,
     QuoteComponent,
     DetailsComponent,
-    DaysPipe
+    DaysPipe,
+    QuotesFormComponent
   ],
   imports: [
     BrowserModule
