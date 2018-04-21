@@ -15,6 +15,8 @@ export class QuoteComponent implements OnInit {
     let quoteLength = this.quotes.length;
     quote.dateAdded = new Date();
     this.quotes.push(quote);
+    console.log(this.quotes);
+    
   }
   removeQuote(complete,index){
     if(complete){
