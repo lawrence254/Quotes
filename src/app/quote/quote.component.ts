@@ -11,6 +11,11 @@ export class QuoteComponent implements OnInit {
     new Quote('the same for you.','Princess Diana','BrainyQuotes.com',new Date(2018,1,12),0,0),
     new Quote('the same for you.','Princess Diana','BrainyQuotes.com',new Date(2018,1,12),0,0)
   ]
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.dateAdded = new Date();
+    this.quotes.push(quote);
+  }
   removeQuote(complete,index){
     if(complete){
       this.quotes.splice(index,1);
