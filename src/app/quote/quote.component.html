@@ -1,10 +1,12 @@
 <h1>Here are your Quotes</h1>
 <hr>
 <div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <app-quotes-form></app-quotes-form>
+        </div>
+ 
   <div class="row" *ngFor="let saying of quotes;let i= index">
-    <div class="col-md-4">
-      <app-quotes-form></app-quotes-form>
-    </div>
       <div class="col-md-4">
    <h2>"{{saying.quote}}"</h2>
    <i>"{{saying.author}}"</i><br>
