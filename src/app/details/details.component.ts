@@ -6,7 +6,6 @@ import {Quote} from '../quote'
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-  totalVotes:number;
 
   @Input() saying:Quote;
   @Output() complete = new EventEmitter<boolean>();
@@ -17,12 +16,16 @@ export class DetailsComponent implements OnInit {
   downVote(){
     this.saying.downVotes --
   }
+
+ 
+ 
+  
   deleteQuote(deleteQ:boolean){
     this.complete.emit(deleteQ);
   }
 
   constructor() {
-    this.totalVotes = 0;
+
    }
 
   ngOnInit() {

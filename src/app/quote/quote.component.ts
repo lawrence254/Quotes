@@ -9,7 +9,7 @@ export class QuoteComponent implements OnInit {
 
   quotes = [
     new Quote('the same for you.','Princess Diana','BrainyQuotes.com',new Date(2018,1,12),0,0),
-    new Quote('the same for you.','Princess Diana','BrainyQuotes.com',new Date(2018,1,12),0,0)
+    new Quote('the same for you.','Princess Diana','BrainyQuotes.com',new Date(2016,1,12),0,0)
   ]
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
