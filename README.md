@@ -1,27 +1,41 @@
 # Quotes
+#### This is a simple Angular 5 application that allows you to create quotes which can be upvoted or downvoted. It also allows a user to delete quotes. 20 April 2018
+#### By **LAWRENCE KARANJA**
+## Description
+Quotes is a simple application meant to test understanding of Angular 5. The application allows a user to provide some inputs and as out put it displays the details of a quotes in Bootstrap 4 cards. It also uses pipes and custom directives.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+This project is generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+## Setup/Installation Requirements
+* For the application to run on local machine, you must have `NPM` and `Angular` installed.
+* `Bootstrap(4)` is also required for the custom styling used and recommended especially for the cards element to work.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+When all the Requirements have been met, you can simply clone the application by running the  command `git clone https://github.com/lawrence254/Quotes.git` on your local machine and you can run your own version by opening a terminal and navigating to the cloned folder and running `ng serve -o`,this will initiate and open a server that will allow you to view the application. You can also access the generated application from this [link](https://lawrence254.github.io/Quotes/) or the one provided above if you first want to see how the application works.
+## Known Bugs/Updates/Corrections
+The application currently doesn't have any bugs. If any are spotted you can open an issue by clicking on this [link](https://github.com/lawrence254/pigDice/issues) and selecting `New Issue` on the resulting page and I will look into it.
 
-## Code scaffolding
+## Specifications
+The following are the specifications for this application:
+#### INPUT
+* The application accepts 4 inputs with the user being able to enter only 3 of the required inputs.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### INPUT TYPE
+  * The application has a html5 input validation for text, it also requires you to enter text into the text boxes before you can proceed with submitting a quote.
 
-## Build
+### The following are the required inputs:
+1. A Quote (Entered into the text area).
+2. The author of the Quote.
+3. Name of the user uploading the Quote.
+4. The date the Quote is submitted.(Hidden input).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Built Using
+* Angular 5
+* Bootstrap
 
-## Running unit tests
+## Contact details
+You can contact me at lawrenslava1[at]gmail[dot]com
+### License
+[License](https://github.com/lawrence254/pigDice/blob/master/LICENSE)
+*MIT*
+Copyright (c) 2018 **LAWRENCE KARANJA**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
