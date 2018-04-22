@@ -11,8 +11,11 @@ This project is generated with [Angular CLI](https://github.com/angular/angular-
 
 
 When all the Requirements have been met, you can simply clone the application by running the  command `git clone https://github.com/lawrence254/Quotes.git` on your local machine and you can run your own version by opening a terminal and navigating to the cloned folder and running `ng serve -o`,this will initiate and open a server that will allow you to view the application. You can also access the generated application from this [link](https://lawrence254.github.io/Quotes/) or the one provided above if you first want to see how the application works.
+
 ## Known Bugs/Updates/Corrections
-The application currently doesn't have any bugs. If any are spotted you can open an issue by clicking on this [link](https://github.com/lawrence254/pigDice/issues) and selecting `New Issue` on the resulting page and I will look into it.
+* The application inputs currently do not clear their input fields after data submission. `WIP`
+* If any errors are spotted or if you have ideas for improvement you can open an issue by clicking on this [link](https://github.com/lawrence254/pigDice/issues) and selecting `New Issue` on the resulting page and I will look into it.
+* You can also create a pull request with further improvements and I will add them onto the project
 
 ## Specifications
 The following are the specifications for this application:
