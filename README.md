@@ -14,7 +14,7 @@ When all the Requirements have been met, you can simply clone the application by
 
 ## Known Bugs/Updates/Corrections
 * The application inputs currently do not clear their input fields after data submission. `WIP`
-* If any errors are spotted or if you have ideas for improvement you can open an issue by clicking on this [link](https://github.com/lawrence254/pigDice/issues) and selecting `New Issue` on the resulting page and I will look into it.
+* If any errors are spotted or if you have ideas for improvement you can open an issue by clicking on this [link](https://github.com/lawrence254/Quotes/issues) and selecting `New Issue` on the resulting page and I will look into it.
 * You can also create a pull request with further improvements and I will add them onto the project
 
 ## Specifications
@@ -38,7 +38,7 @@ The following are the specifications for this application:
 ## Contact details
 You can contact me at lawrenslava1[at]gmail[dot]com
 ### License
-[License](https://github.com/lawrence254/pigDice/blob/master/LICENSE)
+[License](https://github.com/lawrence254/Quotes/blob/master/LICENSE)
 *MIT*
 Copyright (c) 2018 **LAWRENCE KARANJA**
 
